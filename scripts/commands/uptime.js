@@ -74,8 +74,8 @@ const time = process.uptime() ,
     const lengthchar = (await axios.get('https://raw.githubusercontent.com/mraikero-01/saikidesu_data/main/imgs_data2.json')).data
     console.log(lengthchar.length)
   const Canvas = require('canvas');
-    let pathImg = __dirname + `/nayan/avatar_1111231.png`;
-    let pathAva = __dirname + `/nayan/avatar_3dsc11.png`;
+    let pathImg = __dirname + `/munna/avatar_1111231.png`;
+    let pathAva = __dirname + `/munna/avatar_3dsc11.png`;
     let background = (await axios.get(encodeURI((loz[Math.floor(Math.random() * loz.length)])), { responseType: "arraybuffer" })).data;
     fs.writeFileSync(pathImg, Buffer.from(background, "utf-8"));
     let ava = (await axios.get(encodeURI(`${lengthchar[id - 1].imgAnime}`), { responseType: "arraybuffer" })).data;
@@ -106,7 +106,7 @@ let l1 = await loadImage(pathAva);
     ctx.fillText("UPTIME ROBOT", 95, 340);
     ctx.beginPath();
   ////////////////////////////////////////
-   registerFont(__dirname + `/nayan/UTM-Avo.ttf`, {
+   registerFont(__dirname + `/munna/UTM-Avo.ttf`, {
       family: "UTM"
     });
     ctx.textAlign = "start";
@@ -115,13 +115,13 @@ let l1 = await loadImage(pathAva);
     ctx.fillText(`${z_1} : ${x_1} : ${y_1} `, 180, 440);
     ctx.restore();
     ctx.save();
-registerFont(__dirname + `/nayan/CaviarDreams.ttf`, {
+registerFont(__dirname + `/MOHAMMAD-MUNNA/CaviarDreams.ttf`, {
       family: "time"
     });
     ctx.textAlign = "start";
     ctx.font = "45px time";
-    ctx.fillText("@" + "www.xnxx.com169", 250, 515)
-    ctx.fillText("@" + "MOHAMMAD-NAYAN", 250, 575)
+    ctx.fillText("@" + "www.munna.com290", 250, 515)
+    ctx.fillText("@" + "MOHAMMAD-MUNNA", 250, 575)
    //ctx.fillText("@" + "DVFB.VietLe.pro", 405, 750)
     ctx.restore();
     ctx.save();
